@@ -1,0 +1,102 @@
+<!-----------------------
+DEEP SHETH
+DSS218
+NOV. 4, 2014
+ROCK, PAPER, SCISSOR GAME
+------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Game | Rock Paper Scissors</title>
+	<meta name="author" content="Deep Sheth">
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+      <h1>Rock | Paper | Scissors</h1>
+</header>
+
+<section>
+
+<!-- PLAYER COLUMN -->
+      <div class="col" id="col-1">
+
+		<!-- Column Top -->
+            <div class="name-score">
+                  <input type="text" placeholder="Enter Name" onchange="username()" id="playername"></input>
+                  <h2 id="player-score">0</h2>
+            </div>
+
+		<!-- Column Middle -->
+            <p><b>You picked:</b><span id="user-pick"></span></p>
+            <div class="img-container"><img src="" id="img-player" alt="" /></div>
+
+		<!-- Column Bottom -->
+            <div class="btn-container">
+                  <button type="button" id="btn-rock" onclick="btnRock()">Rock</button>
+                  <button type="button" id="btn-paper" onclick="btnPaper()">Paper</button>
+                  <button type="button" id="btn-scissor" onclick="btnScissor()">Scissor</button>
+            </div>
+      </div>
+
+<!-- TIE COLUMN -->
+      <div class="col" id="col-2">
+
+		<!-- Column Top -->
+            <div class="name-score">
+                  <h2>Tie</h2>
+                  <h2 id="tie-score">0</h2>
+            </div>
+            <p><span id="winner">Click a button on the bottom left to begin.</span></p>
+
+		<!-- Column Middle -->
+            <div id="operator"></div>
+
+		<!-- Column Bottom -->
+		<div class="btn-container">
+			<button type="button" id="shoot" onclick="shoot()">Shoot!</button>
+			<button type="button" id="btn-reset" onclick="reset()">Reset</button>
+		</div>
+
+      </div>
+
+<!-- COMPUTER COLUMN -->
+      <div class="col" id="col-3">
+
+		<!-- Column Top -->
+            <div class="name-score">
+                  <h2>Computer</h2>
+                  <h2 id="computer-score">0</h2>
+            </div>
+            <p><b>Computer picked:</b><span id="computer-pick"></span></p>
+
+		<!-- Column Middle -->
+            <div class="img-container"><img src="" id="img-computer" alt=""/></div>
+
+		<!-- Column Bottom -->
+		<input type="text" id="display-winner" disabled></input>
+
+      </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+	&copy; Deep Sheth – All rights reserved.
+</footer>
+
+<!-- Javscript File -->
+<script src="script.js"></script>
+</body>
+
+</html>

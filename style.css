@@ -1,0 +1,142 @@
+html {
+      font-family: "segoe ui", "arial", "san-serif";
+      background: #2C2D30;
+      color: #FFFFFF;
+}
+
+::selection {
+  background: #224F59;
+  color: #FFF;/* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #224F59;
+  color: #FFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+      text-align: center;
+      border-bottom: 8px solid #FFA429;
+      background: #FFF;
+      color: #000;
+}
+
+section {
+      margin: 1.5em 5em;
+}
+
+input {
+      font-family: "segoe ui" !important;
+      width: 7em;
+      padding: 8px 5px 8px 20px;
+      font-size: 2em;
+      font-weight: bold;
+      display: inline-block;
+      border: none;
+
+
+}
+
+input:hover { -webkit-box-shadow:inset 0 0 0 5px #FFA429; box-shadow:inset 0 0 0 5px #FFA429; }
+input:focus { background:#FFF; color: #FFA429; }
+
+.col {
+
+      width: 30%;
+      display: inline-block;
+      vertical-align: text-top;
+      padding: .75em;
+      text-align: center;
+}
+
+h1 {
+      font-size: 3.5em;
+      margin: 0;
+      padding: .5em;
+}
+
+h2 {
+      font-size: 2.5em;
+      margin: 0;
+      display: inline-block;
+}
+
+h3 {
+      font-size: 2em;
+      display: inline-block;
+}
+
+#player-score, #tie-score, #computer-score {
+      margin: 0 0 0 1em;
+}
+
+#img-player, #img-computer {
+      height: 250px;
+}
+
+button {
+      width: 5.5em;
+      height: 2.75em;
+      font-family: "segoe ui", arial, san-serif !important;
+      font-size: 1.25em;
+      font-weight: bold;
+      margin: 1em .25em;
+      background: #62666D;
+      color: #FFF;
+      border: none;
+}
+
+button:hover { border: 5px solid #FFF;}
+button:focus { background:#FFF; color: #FFA429;}
+
+#display-winner {
+      width: 80%;
+      text-align: center;
+      margin: .75em auto;
+}
+
+#operator, #img-player, #img-computer {
+      text-align: center;
+      vertical-align: middle;
+      font-size: 10em;
+      height:250px;
+      color: #FFA429;
+}
+
+#operator {
+      font-weight: 900;
+}
+
+.img-container {
+      height: 250px;
+}
+
+#btn-reset, #shoot {
+      width: 7em;
+      background: #FFA429;
+      color: #FFF;
+      border: none;
+      font-style: small-caps;
+      margin: 1.25em .5em;
+}
+
+#btn-reset:hover, #shoot:hover { border: 5px solid #FFF;}
+#btn-reset:active, #shoot:active {background: #FFF; color: #000;}
+
+.fadein {
+      background: rgba(250,250,250, .1);
+      -webkit-transition: all 275ms ease;
+      -moz-transition: all 275ms ease;
+      -ms-transition: all 275ms ease;
+      -o-transition: all 275ms ease;
+      transition: all 275ms ease;
+}
+
+footer {
+      text-align: center;
+      padding-bottom: 1.5em;
+}
